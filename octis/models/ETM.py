@@ -15,7 +15,7 @@ class ETM(BaseETM):
     def __init__(
         self, num_topics=10, num_epochs=100, t_hidden_size=800, rho_size=300,
         embedding_size=300, activation='relu', dropout=0.5, lr=0.005,
-        optimizer='adam', batch_size=128, clip=0.0, wdecay=1.2e-6, bow_norm=1,
+        optimizer='adam', batch_size=32, clip=0.0, wdecay=1.2e-6, bow_norm=1,
         device='cpu', train_embeddings=True, embeddings_path=None,
             embeddings_type='pickle', binary_embeddings=True,
             headerless_embeddings=False, use_partitions=True):
